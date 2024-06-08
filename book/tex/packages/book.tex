@@ -1,0 +1,68 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{normalem}{ulem}
+%
+\documentclass[10pt]{article}
+\pdfpagewidth 6in
+\pdfpageheight 9in
+\usepackage[margin=0.75in, paperwidth=6in, paperheight=9in]{geometry}
+\usepackage{titlepic}
+\usepackage[export]{adjustbox}% http://ctan.org/pkg/adjustbox
+\let\oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+  \oldincludegraphics[#1,max width=\linewidth]{#2}}
+\usepackage{amsmath,amssymb,ulem}
+\usepackage{lmodern}
+\usepackage{multicol}
+\setlength\columnsep{15pt}
+\setlength{\columnseprule}{0.4pt}
+\usepackage{iftex}
+\usepackage{soul}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp} % provide euro and other symbols
+\usepackage{longtable}
+\usepackage{tabularx, booktabs}
+\usepackage{eso-pic}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfauthor={Steven Hunt},
+  pdftitle={The Cucumber Field Guide: Practical Examples for Automated Software Testing},
+  pdfsubject={Software Development},
+  pdfkeywords={cucumber, gherkin, ruby, java, javaScript, automation, development, testing},
+  pdfcreator={pdfTeX}}
+\author{Steven Hunt}
+\date{}
+
+\usepackage{makeidx}
+\makeindex
+\usepackage[totoc]{idxlayout}
+
+\renewcommand*{\arraystretch}{1.5}

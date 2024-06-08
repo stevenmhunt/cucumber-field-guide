@@ -1,0 +1,20 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/TrailingEmptyLines:
+  Enabled: false
+Layout/IndentationWidth:
+  Width: 4
+Lint/UselessAssignment:
+  Enabled: false
+Lint/UnusedBlockArgument:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/GlobalVars:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
