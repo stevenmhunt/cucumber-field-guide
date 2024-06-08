@@ -30,7 +30,7 @@ Run `make` to generate the .tex file and then create a PDF of *The Cucumber Fiel
 
 - Cover Page Font: DejaVu Sans
 - Book Font: Latin Modern Roman, Latin Modern Mono
-- Cover Page Graphic: Cucumber plant by Creazilla^[https://creazilla.com/media/clipart/11987/cucumber-plant]^[https://creazilla.com/media/clipart/11988/cucumber-plant]
-- Header Icons: Tabler Icons^[https://icon-icons.com/users/wtNmokBMlY0Ee6C38dO9v/icon-sets/]
-- Figure Graphics: created by Steven Hunt
-- All graphics modifications were made using Pinta^[https://www.pinta-project.com/]
+- Cucumber Cover Graphic: [Cucumber plant](https://creazilla.com/media/clipart/11988/cucumber-plant) and [vines](https://creazilla.com/media/clipart/11987/cucumber-plant) by [Creazilla](https://creazilla.com/)
+- Header Icons: [Tabler Icons](https://icon-icons.com/users/wtNmokBMlY0Ee6C38dO9v/icon-sets/)
+- Figure Graphics: created by Steven Hunt (unless otherwise noted)
+- All graphics modifications were made using [Pinta](https://www.pinta-project.com/)
