@@ -1,0 +1,17 @@
+node {
+    stage('Checkout') {
+        checkout scm
+    }
+
+    stage('Build') {
+        echo 'Build your nodejs application...'
+    }
+
+    stage('Test') {
+        sh 'npm run ci-test'
+    }
+
+    stage('Deploy') { echo 'Deploying!' }
+
+    stage('Promote') { echo 'Promote!' }
+}

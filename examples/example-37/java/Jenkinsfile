@@ -1,0 +1,23 @@
+library 'common-lib'
+
+node {
+    stage('Checkout') {
+        checkout scm
+    }
+
+    stage('Build') {
+        echo 'Build your java application...'
+    }
+
+    stage('Test') {
+        try {
+            tests.executeCucumberTests([
+                language: 'java'
+            ])
+        } finally { junit 'build/reports/**/*.xml' }
+    }
+
+    stage('Deploy') { echo 'Deploying!' }
+
+    stage('Promote') { echo 'Promote!' }
+}

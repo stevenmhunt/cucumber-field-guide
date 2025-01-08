@@ -1,0 +1,24 @@
+node {
+    stage('Checkout') {
+        checkout scm
+    }
+
+    stage('Build') {
+        echo 'Build your java application...'
+    }
+
+    stage('Test') {
+        def changedService = 'service-2' // determine this based on code changes.
+        def dependencies = [:] // load these dependencies from your configuration files.
+
+        def tags = generateTagExpression(
+            getServicesRequiringTesting(changedService, dependencies))
+        try {
+            executeCucumberJVMTests([ tags: tags ])
+        } finally { junit 'build/reports/**/*.xml' }
+    }
+
+    stage('Deploy') { echo 'Deploying!' }
+
+    stage('Promote') { echo 'Promote!' }
+}

@@ -1,0 +1,11 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:features) do |t|
+    t.cucumber_opts = [] # the "default" profile will be used if none is specified.
+end
+
+Cucumber::Rake::Task.new(:ci) do |t|
+    t.cucumber_opts = ['-p ci']
+end

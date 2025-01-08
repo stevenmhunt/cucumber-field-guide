@@ -1,0 +1,21 @@
+node {
+    stage('Checkout') {
+        checkout scm
+    }
+
+    stage('Build') {
+        echo 'Build your java application...'
+    }
+
+    stage('Test') {
+        sh '''
+        M2_HOME='/opt/apache-maven-3.9.6'
+        PATH="$M2_HOME/bin:$PATH"
+        mvn test -Pprofile-ci
+        '''
+    }
+
+    stage('Deploy') { echo 'Deploying!' }
+
+    stage('Promote') { echo 'Promote!' }
+}

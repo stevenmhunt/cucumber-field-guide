@@ -1,0 +1,2 @@
+default: -f pretty
+ci: --publish-quiet --strict -f progress -f junit --out build/reports -t "not @wip"

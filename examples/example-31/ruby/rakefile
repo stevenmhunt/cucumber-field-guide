@@ -1,0 +1,10 @@
+require 'rubygems'
+require 'cucumber'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:ci) do |t|
+    t.cucumber_opts = [
+        '--publish-quiet', '--strict', '--format progress',
+        '--format junit', '--out build/reports'
+    ]
+end

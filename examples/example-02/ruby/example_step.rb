@@ -1,0 +1,3 @@
+Given('the user performs some sort of action') do
+    # do something...
+end

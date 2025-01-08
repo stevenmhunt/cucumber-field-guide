@@ -1,0 +1,1 @@
+Given('some file is loaded') { @data = load_resource 'someFile' }

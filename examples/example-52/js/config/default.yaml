@@ -1,0 +1,3 @@
+db:
+    client: sqlite3
+    connection: ':memory:'
