@@ -1,0 +1,13 @@
+mobile:
+  appium:
+    caps:
+      platformName: android
+      platformVersion: '<device version from Virtual Device Manager>'
+      deviceName: <device name from Virtual Device Manager>
+      app: ./bin/MyDemoApp.apk
+      automationName: UiAutomator2
+    appium_lib:
+      server_url: http://localhost:4723
+  mydemoapp:
+    cart badge: //android.view.ViewGroup[@content-desc="cart badge"]
+    cart screen: //android.widget.ScrollView[@content-desc="cart screen"]

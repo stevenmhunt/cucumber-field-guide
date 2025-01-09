@@ -10,3 +10,6 @@ This page contains a list of known errors in the current edition of The Cucumber
 
 ## Chapter 10
 - Page 131: The path `./features/tsconfig.json` should be `./tsconfig.json`
+
+## Chapter 12
+- Page 187: The `require` path `../utils/SimpleSearchPage` should be `../pages/SimpleSearchPage`

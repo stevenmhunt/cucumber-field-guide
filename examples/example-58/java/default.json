@@ -1,0 +1,16 @@
+{
+    "appium": {
+        "serverUrl": "http://localhost:4723",
+        "caps": {
+            "platformVersion": "<device version from Virtual Device Manager>",
+            "deviceName": "<device name from Virtual Device Manager>",
+            "app": "./bin/MyDemoApp.apk",
+            "platformName": "android",
+            "automationName": "UiAutomator2"
+        }
+    },
+    "mydemoapp": {
+        "cart badge": "//android.view.ViewGroup[@content-desc=\"cart badge\"]",
+        "cart screen": "//android.widget.ScrollView[@content-desc=\"cart screen\"]"
+    }
+}

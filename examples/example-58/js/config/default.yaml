@@ -1,0 +1,13 @@
+mobile:
+  appium:
+    port: 4723
+    logLevel: warn
+    capabilities:
+      appium:platformName: android
+      appium:platformVersion: '<device version from Virtual Device Manager>'
+      appium:deviceName: <device name from Virtual Device Manager>
+      appium:automationName: UiAutomator2
+      appium:app: ./bin/MyDemoApp.apk
+  mydemoapp:
+    cart badge: //android.view.ViewGroup[@content-desc="cart badge"]
+    cart screen: //android.widget.ScrollView[@content-desc="cart screen"]

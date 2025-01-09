@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Search Page</title>
+    <script>
+        function performSearch() {
+            var searchInput = document.getElementById('search_box').value;
+            var resultsArea = document.getElementById('results');
+            if (searchInput.trim() !== '') {
+                resultsArea.innerHTML = 'Results for: ' + searchInput;
+            } else {
+                resultsArea.innerHTML = 'Please enter a search query.';
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Search Page</h1>
+    <form onsubmit="return performSearch();">
+        <input type="text" id="search_box" placeholder="Enter search query...">
+        <input type="submit" value="Search">
+    </form>
+    <div id="results"></div>
+</body>
+</html>
